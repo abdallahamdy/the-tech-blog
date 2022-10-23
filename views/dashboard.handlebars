@@ -1,0 +1,31 @@
+<section>
+  <h2>Create a New Article</h2>
+
+  <form class="new-article-form">
+    <div>
+      <label for="article-title">Article Title</label>
+      <input type="text" id="article-title" name="article-title" />
+    </div>
+    <div>
+      <label for="article-content">Article Content</label>
+      <input id="article-content" name="article-content" />
+    </div>
+    <button class="btn bg-dark btn-outline-light btn-lg px-5" type="submit" class="btn">Create!</button>
+  </form>
+</section>
+
+{{#if articles.length}}
+<section>
+  <h2>Your Articles</h2>
+  <ol>
+    {{#each articles as |article|}}
+    <li>
+      {{> article-info article}}
+      <a href="/dashboard/edit/{{article.id}}" class="edit-link">Edit article</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-article.js"></script>

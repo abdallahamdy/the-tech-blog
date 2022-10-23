@@ -73,10 +73,10 @@ router.get('/article/:id', (req, res) => {
         return;
       }
 
-      const post = dbArticleData.get({ plain: true });
+      const article = dbArticleData.get({ plain: true });
 
       res.render('single-article', {
-        post,
+        article,
         loggedIn: req.session.loggedIn
       });
     })
