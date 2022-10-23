@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .page-title {
     color: beige;
     text-align: center;
@@ -33,4 +38,29 @@
 
 .card {
     margin: 60px;
+}
+
+.article {
+    border: 2px solid #343a40;
+    padding: 10px;
+    margin: 10px 150px 10px 150px;
+}
+
+.comment {
+    border: 1px solid lightslategray;
+    padding: 10px;
+    margin: 10px 150px 10px 150px;
+}
+
+.date {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.user {
+    font-weight: 700;
+}
+
+ol li{
+    list-style-type: none;
 }
