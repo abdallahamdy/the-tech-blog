@@ -37,7 +37,7 @@ router.get('/', (req, res) => {
 
 // Get an article by ID including the comments made
 router.get('/:id', (req, res) => {
-  Post.findOne({
+  Article.findOne({
     where: {
       id: req.params.id
     },
@@ -91,7 +91,7 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', withAuth, (req, res) => {
-  Post.update(
+  Article.update(
     {
       title: req.body.title
     },

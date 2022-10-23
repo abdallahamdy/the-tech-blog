@@ -17,7 +17,7 @@ Article.init(
       allowNull: false
     },
     article_content: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     user_id: {

@@ -30,3 +30,5 @@ User.hasMany(Comment, {
 Article.hasMany(Comment, {
     foreignKey: 'article_id'
 });
+
+module.exports = { User, Article, Comment };
