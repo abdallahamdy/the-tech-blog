@@ -16,6 +16,10 @@ Article.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    article_content: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
